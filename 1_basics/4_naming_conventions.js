@@ -10,10 +10,27 @@
  * 
  */
 
-// no errors
+// no errors cases
 let codefactory = 'codeFactory';
 var $ive = 'IVE';
 const _yuJin = 'Ann';
 
+console.log(codefactory, $ive, _yuJin)
+
+// error cases
+// let 1name = 'no';
+// let const = 'attention';
+
+/**
+ * Naming Convention 2
+ * 
+ * 1) camelCase - most programming languages
+ * 2) snake_case - using underscore, file name or python
+ * 3) PascalCase - C# microsoft-family language  
+ */
+
+// camelCase
+const annYuJin = 'Ann';
+console.log(annYuJin);
 
 
