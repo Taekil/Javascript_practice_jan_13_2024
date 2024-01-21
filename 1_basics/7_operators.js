@@ -106,6 +106,103 @@ console.log(number);
  */
 
 console.log(5==5);
+console.log(5 == '5');
+console.log(0 == '');
+console.log(true == 1);
+console.log(false == 0);
+console.log(true == '1');
+console.log(false == ''); // True? true!
+
+console.log(5 === 5); // including type
+console.log(5 === '5'); // including type, so return false
+
+console.log(5 === 5);
+console.log(5 === '5');
+console.log(0 === '');
+console.log(true === 1);
+console.log(false === 0);
+console.log(true === '1');
+console.log(false === ''); // false
+
+// using '===' instead of '==' for practical usage. 
+console.log('\n---------------------\n') // divider
+console.log(5 != 5);
+console.log(5 != '5');
+console.log(0 != '');
+console.log(true != 1);
+console.log(false != 0);
+console.log(true != '1');
+console.log(false != '');
+console.log('\n---------------------\n') // divider
+// using '!==' also used for practical, not using !=
+console.log(5 !== 5); //return false
+console.log(5 !== '5');
+console.log(0 !== '');
+console.log(true !== 1);
+console.log(false !== 0);
+console.log(true !== '1');
+console.log(false !== '');
+console.log('\n---------------------\n') // divider
+
+/**
+ * comparison operators for big and small
+ */
+
+console.log(100 > 1);
+console.log(100 < 1);
+console.log(100 <= 1);
+console.log(100 >= 1);
+console.log('\n---------------------\n') // divider
+/**
+ * ternary operator
+ */
+// return true comment
+console.log(10 > 0 ? '10 > 0':'10 < 0'); // return 10 > 0 
+console.log('\n---------------------\n') // divider
+/**
+ * logic operator
+ * 1) &&(and)
+ * 2) ||(or)
+ */
+// && -> all true -> return true
+console.log(true && true);
+console.log(true && false);
+console.log(false && true);
+console.log(false && false);
+// || -> one true -> return true
+console.log(true || true);
+console.log(true || false);
+console.log(false || true);
+console.log(false || false); // return false
+console.log('\n---------------------\n') // divider
+// extanded usages
+console.log(10 > 1 && 20 > 2);
+console.log(10 < 1 && 20 > 2);
+console.log(10 < 1 && 20 < 2); // return false
+
+console.log(10 > 1 || 20 > 2);
+console.log(10 < 1 || 20 > 2);
+console.log(10 < 1 || 20 < 2); // return false
+
+console.log('\n---------------------\n') // divider
+
+/**
+ * Short circuit evaluation
+ * 
+ */
+console.log(true || 'ive'); // return true
+console.log(false || 'ive'); // return ive
+console.log(false && 'ive'); // return false
+console.log(true && 'ive'); // return ive
+
+console.log(true && true &&  'ive'); // return ive
+console.log(true && false &&  'ive'); // return false
+
+
+
+
+
+
 
 
 
