@@ -198,12 +198,31 @@ console.log(true && 'ive'); // return ive
 console.log(true && true &&  'ive'); // return ive
 console.log(true && false &&  'ive'); // return false
 
+console.log('\n---------------------\n') // divider
 
+/**
+ * power
+ */
 
+console.log(2 ** 2);
+console.log(10 ** 3);
 
+console.log('\n---------------------\n') // divider
 
+/**
+ * null oerator
+ */
+let name
+console.log(name);
+name = name ?? 'code'; // if name is undefined
+// return 'code' -> saving 'code' at name variable
+console.log(name);
 
+name = name ?? 'ive';
+console.log(name); // return code becuase name is not null. 
 
-
+let name2;
+name2 ??= 'code';
+console.log(name2);
 
 
